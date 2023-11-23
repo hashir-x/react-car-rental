@@ -1,0 +1,22 @@
+.nav-options {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: 0.3s all ease;
+}
+
+.nav-options:hover {
+    color: #FF4D30;
+}
+
+
+@media (max-width:990px){
+
+    .nav-options {
+        margin-bottom: 1.2rem;
+    }
+    .login-option {
+        margin-top: 0.75rem;
+    }
+}
+

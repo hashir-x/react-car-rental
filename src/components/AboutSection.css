@@ -1,0 +1,10 @@
+.home {
+    color: #010103;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.home:hover {
+    color: #ff7d30;
+}
