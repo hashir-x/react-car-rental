@@ -1,0 +1,19 @@
+.team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:1150px){
+    .team {
+        grid-template-columns: repeat(2, 0.36fr);
+    }
+}
+
+@media (max-width:800px){
+    .team {
+        grid-template-columns: 0.54fr;
+    }
+}

@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AboutSection from '../components/AboutSection'
+import ContactFooter from '../components/ContactFooter'
 
 function Contact() {
+
   return (
-    <div>Contact</div>
+    <>
+      <AboutSection page={'Contact'}/>
+      <ContactFooter/>
+    </>
   )
 }
 

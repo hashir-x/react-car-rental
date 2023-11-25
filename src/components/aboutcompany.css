@@ -1,0 +1,28 @@
+.companys {
+    /* max-width: 90rem; */
+    margin: 10rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.company-right{
+    display: flex;
+    flex-direction: column;
+    color: #010103;
+    max-width: 420px;
+}
+
+@media (max-width:960px){
+    .companys {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .right-heading {
+        text-align: center;
+    }
+    .right-para {
+        text-align: center;
+    }
+    
+}

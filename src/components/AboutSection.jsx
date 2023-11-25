@@ -1,10 +1,9 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './AboutSection.css'
 import { Link } from 'react-router-dom';
-import Header from './Header';
-
 
 function AboutSection(props) {
+
   return (
     <>
         <section>
