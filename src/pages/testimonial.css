@@ -1,0 +1,17 @@
+.testimonials {
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    justify-content: center;
+}
+
+.comments {
+    padding: 3rem 2rem;
+}
+
+@media (max-width:900px) {
+    .testimonials {
+        grid-template-columns: 0.70fr;
+    }
+}

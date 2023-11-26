@@ -1,0 +1,14 @@
+.carModels {
+    display: flex;
+    flex-direction: column;
+    border: 0.1px solid #777777;
+    border-radius: 2px;
+    color: #000;
+}
+
+.car-second, .car-third {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    margin-top: 1rem;
+}
