@@ -8,7 +8,7 @@ function Models() {
   return (
     <>
       <AboutSection page={'Vehicle Models'}/>
-      <section>
+      <section style={{marginTop:"5rem",marginBottom:"10rem"}}>
         <div style={{margin:'0 auto',padding:'0 2.5rem',maxWidth:"1100px"}}>
           <div className='models'>  
             <Cars/>

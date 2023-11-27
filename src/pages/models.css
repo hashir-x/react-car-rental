@@ -1,4 +1,19 @@
 .models {
     display: grid;
+    gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:1150px){
+    .models {
+        grid-template-columns: repeat(2, 0.65fr);
+    }
+}
+
+@media (max-width:800px){
+    .models {
+        grid-template-columns: 0.65fr;
+    }
 }
