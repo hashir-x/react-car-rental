@@ -8,12 +8,12 @@
 
 @media (max-width:1150px){
     .models {
-        grid-template-columns: repeat(2, 0.65fr);
+        grid-template-columns: repeat(2, 0.40fr);
     }
 }
 
 @media (max-width:800px){
     .models {
-        grid-template-columns: 0.65fr;
+        grid-template-columns: 0.60fr;
     }
 }
