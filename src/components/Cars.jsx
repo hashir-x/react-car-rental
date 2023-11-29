@@ -14,7 +14,7 @@ function Cars() {
                 <h4 style={{color:"#000"}}>Audi A1</h4>
               </div>
               <div>
-                <h4 style={{color:"#000"}}>$89 / day</h4>
+                <h4 style={{color:"#000"}}>$95 / day</h4>
               </div>
             </div>
             <div className='car-third'>
@@ -37,7 +37,7 @@ function Cars() {
                 <h4 style={{color:"#000"}}>BMW 320</h4>
               </div>
               <div>
-                <h4 style={{color:"#000"}}>$89 / day</h4>
+                <h4 style={{color:"#000"}}>$105 / day</h4>
               </div>
             </div>
             <div className='car-third'>
@@ -60,7 +60,7 @@ function Cars() {
                 <h4 style={{color:"#000"}}>Mercedes</h4>
               </div>
               <div>
-                <h4 style={{color:"#000"}}>$89 / day</h4>
+                <h4 style={{color:"#000"}}>$110 / day</h4>
               </div>
             </div>
             <div className='car-third'>
@@ -83,7 +83,7 @@ function Cars() {
                 <h4 style={{color:"#000"}}>VW Passat</h4>
               </div>
               <div>
-                <h4 style={{color:"#000"}}>$89 / day</h4>
+                <h4 style={{color:"#000"}}>$65 / day</h4>
               </div>
             </div>
             <div className='car-third'>
@@ -106,7 +106,7 @@ function Cars() {
                 <h4 style={{color:"#000"}}>Golf 6</h4>
               </div>
               <div>
-                <h4 style={{color:"#000"}}>$89 / day</h4>
+                <h4 style={{color:"#000"}}>$49 / day</h4>
               </div>
             </div>
             <div className='car-third'>
@@ -129,7 +129,7 @@ function Cars() {
                 <h4 style={{color:"#000"}}>Toyota Camry</h4>
               </div>
               <div>
-                <h4 style={{color:"#000"}}>$89 / day</h4>
+                <h4 style={{color:"#000"}}>$60 / day</h4>
               </div>
             </div>
             <div className='car-third'>
