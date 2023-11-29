@@ -4,16 +4,20 @@
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
+    width: 1100px;
 }
 
 @media (max-width:1150px){
     .models {
-        grid-template-columns: repeat(2, 0.40fr);
+        grid-template-columns: repeat(2, 1fr);
+        width: auto;
     }
 }
 
 @media (max-width:800px){
     .models {
-        grid-template-columns: 0.60fr;
+        display: flex;
+        flex-direction: column;
+        width: auto;
     }
 }

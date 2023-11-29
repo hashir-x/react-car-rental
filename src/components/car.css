@@ -4,6 +4,12 @@
     border: 0.1px solid #777777;
     border-radius: 2px;
     color: #000;
+    width: 350px;
+}
+
+.car-image {
+    height: 14rem;
+    width: 100%;
 }
 
 .car-second, .car-third {
