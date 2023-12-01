@@ -13,8 +13,8 @@
         justify-content: center;
         align-items: center;
     }
-    contact-left {
-
+    .contact-right{
+        width: 100%;
     }
 }
 .contact-left {
@@ -25,3 +25,11 @@
     width: 410px;
 }
 
+.text-contact::placeholder {
+    padding: 1rem 1.5rem;
+    border: none;
+}
+
+.text-contact-area::placeholder {
+    padding: 1rem 1.5rem;
+}
