@@ -1,3 +1,12 @@
 @media(max-width:800px){
+    .car-img {
+        display: none;
+    }
+    .back-img {
+        display: none;
+    }
+    .car-home {
+        width: 100%;
+    }
     
 }
