@@ -1,6 +1,6 @@
 export const carData = [
     {
-        'Audi A1 S-Line':{
+            name:'Audi A1 S-Line',
             carImage:'https://car-rental-ten.vercel.app/static/media/audia1.d038cf70b700e34e607a.jpg',
             rent:"45",
             model:'Audi',
@@ -11,7 +11,8 @@ export const carData = [
             transmission:'Manual',
             fuel:'Gasoline'
         },
-        'VW Golf 6':{
+        {
+        name:'VW Golf 6',
             carImage:'https://car-rental-ten.vercel.app/static/media/golf6.595c0bbfc7ce2e50aa05.jpg',
             rent:"37",
             model:'Golf 6',
@@ -22,7 +23,8 @@ export const carData = [
             transmission:'Manual',
             fuel:'Diesel'
             },
-        'Toyota Camry':{
+        {
+            name:'Toyota Camry',
             carImage:'https://car-rental-ten.vercel.app/static/media/toyotacamry.3d493a56558c50b677cc.jpg',
             rent:"30",
             model:'Camry',
@@ -33,18 +35,20 @@ export const carData = [
             transmission:'Automatic',
             fuel:'Hybrid'
                 },
-        'BMW 320 ModernLine':{
+        { 
+            name:'BMW 320 ModernLine',
             carImage:'https://car-rental-ten.vercel.app/static/media/bmw320.84ab73b0c9133418f907.jpg',
             rent:"40",
-            model:'320',
-            mark:'BMW',
+            model:'BMW',
+            mark:'320',
             year:'2012',
             doors:'4/5',
             ac:"Yes",
             transmission:'Manual',
             fuel:'Diesel'
             },
-        'Mercedes-Benz GLK':{
+        {
+            name:'Mercedes-Benz GLK',
             carImage:'https://car-rental-ten.vercel.app/static/media/benz.0a6153731a2c1a68054a.jpg',
             rent:"50",
             model:'Benz GLK',
@@ -55,7 +59,8 @@ export const carData = [
             transmission:'Manual',
             fuel:'Gasoline'
              },
-        'VW Passat CC':{
+        {
+            name:'VW Passat CC',
             carImage:'https://car-rental-ten.vercel.app/static/media/passatcc.bd82bd1deac8c11e3c4d.jpg',
             rent:"25",
             model:'Passat CC',
@@ -65,8 +70,6 @@ export const carData = [
             ac:"Yes",
             transmission:'Automatic',
             fuel:'Gasoline'
-            },      
-    }
-
+            }
 ]
 
