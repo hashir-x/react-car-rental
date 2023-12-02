@@ -2,21 +2,29 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .form-box {
     background-color: #fff;
     background-image: url("https://car-rental-ten.vercel.app/static/media/book-bg.6f629a1041e9fd9c6685.png");
-    padding: 1rem 2rem;
+    padding: 2rem;
     border-radius: 0.5rem;
 }
 
-.form-data select {
+.required-field::after {
+    content: "*";
+    color: red;
+    float: initial;
+  }
+
+.form-data select, .form-data input {
     height: 2.7rem;
-    border-color: #706f7b;
+    border: 0.1rem #706f7b solid;
     border-radius: 4px;
 }
+
+
 
 .form-data label {
     font-weight: bold;

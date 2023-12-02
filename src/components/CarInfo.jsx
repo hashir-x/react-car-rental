@@ -3,8 +3,6 @@ import { carData } from '../data/cars'
 
 function CarInfo() {
 
-    const [car,setCar] = useState('')
-
   return (
     <>
         <section>
