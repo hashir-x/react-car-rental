@@ -1,7 +1,7 @@
 .carModels {
     display: flex;
     flex-direction: column;
-    border: 0.1px solid #777777;
+    border: 0.10px solid #777777;
     border-radius: 2px;
     color: #000;
     width: 350px;

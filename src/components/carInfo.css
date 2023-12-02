@@ -1,0 +1,24 @@
+.car-info-heading {
+    text-align: center;
+    margin-bottom: 5rem;
+    max-width: 500px;
+}
+
+.car-details {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    gap: 10rem;
+    align-items: center;
+}
+
+.cars-name-side {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.car-name {
+    padding: 1rem;
+    border: none;
+    font-weight: bold;
+}
