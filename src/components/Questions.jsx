@@ -5,9 +5,9 @@ function Questions() {
   return (
     <>
         <section>
-            <div style={{backgroundImage:"url(https://car-rental-ten.vercel.app/static/media/car.5e21eedbea3280311aff.png)",backgroundRepeat:"no-repeat",backgroundSize:"auto",padding:"5rem 0",backgroundPosition:"0 70%"}}>
+            <div style={{backgroundImage:"url(https://car-rental-ten.vercel.app/static/media/car.5e21eedbea3280311aff.png)",backgroundRepeat:"no-repeat",backgroundSize:"auto",padding:"8rem 0",backgroundPosition:"0 100%"}}>
                 <div  style={{margin:'0 auto',padding:'0 2.5rem',maxWidth:"1350px"}}>
-                    <div className='d-flex flex-column'>
+                    <div className='d-flex flex-column gap-5'>
                         <div style={{margin:"0 auto",width:"800px"}} className='d-flex flex-column text-center'>
                             <p style={{fontSize:'1.4rem',fontWeight:"bold",color:"#000",marginBottom:"0.2rem"}}>FAQ</p>
                             <h1 style={{color:"#000",fontWeight:"bold",marginBottom:"1rem"}}>Frequently Asked Questions</h1>
