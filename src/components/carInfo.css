@@ -6,19 +6,48 @@
 
 .car-details {
     display: grid;
-    grid-template-columns: 2fr 3fr 1fr;
-    gap: 10rem;
+    grid-template-columns: 2fr 3fr 2fr;
+    gap: 2rem;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .cars-name-side {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    min-width: 240px;
 }
 
 .car-name {
     padding: 1rem;
     border: none;
     font-weight: bold;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+.car-image-main {
+    width: 500px;
+}
+
+@media (max-width:1050px){
+    .car-details {
+        grid-template-columns: 1fr;
+    }
+    .car-image-main {
+        width: auto;
+    }
+}
+
+
+.spec-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    text-align: center;
+}
+
+.spec-details span:first-child {
+    border-right: 2px solid #706f7b;
 }

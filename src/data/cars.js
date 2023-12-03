@@ -1,5 +1,6 @@
 export const carData = [
-    {
+    {       
+            id:1,
             name:'Audi A1 S-Line',
             carImage:'https://car-rental-ten.vercel.app/static/media/audia1.d038cf70b700e34e607a.jpg',
             rent:"45",
@@ -12,7 +13,8 @@ export const carData = [
             fuel:'Gasoline'
         },
         {
-        name:'VW Golf 6',
+            id:2,
+            name:'VW Golf 6',
             carImage:'https://car-rental-ten.vercel.app/static/media/golf6.595c0bbfc7ce2e50aa05.jpg',
             rent:"37",
             model:'Golf 6',
@@ -24,6 +26,7 @@ export const carData = [
             fuel:'Diesel'
             },
         {
+            id:3,
             name:'Toyota Camry',
             carImage:'https://car-rental-ten.vercel.app/static/media/toyotacamry.3d493a56558c50b677cc.jpg',
             rent:"30",
@@ -36,6 +39,7 @@ export const carData = [
             fuel:'Hybrid'
                 },
         { 
+            id:4,
             name:'BMW 320 ModernLine',
             carImage:'https://car-rental-ten.vercel.app/static/media/bmw320.84ab73b0c9133418f907.jpg',
             rent:"40",
@@ -48,6 +52,7 @@ export const carData = [
             fuel:'Diesel'
             },
         {
+            id:5,
             name:'Mercedes-Benz GLK',
             carImage:'https://car-rental-ten.vercel.app/static/media/benz.0a6153731a2c1a68054a.jpg',
             rent:"50",
@@ -60,6 +65,7 @@ export const carData = [
             fuel:'Gasoline'
              },
         {
+            id:6,
             name:'VW Passat CC',
             carImage:'https://car-rental-ten.vercel.app/static/media/passatcc.bd82bd1deac8c11e3c4d.jpg',
             rent:"25",
