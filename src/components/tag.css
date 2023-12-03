@@ -1,0 +1,19 @@
+.tag-heading1 {
+    color: #fff;
+    font-size: 3.4rem;
+    font-weight: bold;
+}
+
+.tag-heading2 {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+@media (max-width:660px){
+    .tag-heading1 {
+        font-size: 2.4rem;
+    }
+    .tag-heading2 {
+        font-size: 1.2rem;
+    }
+}

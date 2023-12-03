@@ -2,6 +2,7 @@ import React from 'react'
 import Intro from '../components/Intro'
 import AboutSupport from '../components/AboutSupport'
 import CarInfo from '../components/CarInfo'
+import Tag from '../components/Tag'
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
     <AboutSupport/>
     </div>
     <CarInfo/>
+    <Tag/>
     </>
   )
 }

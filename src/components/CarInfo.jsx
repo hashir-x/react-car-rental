@@ -53,7 +53,7 @@ function CarInfo() {
                             ))
                             }
                         </div>
-                        <div className='d-flex justify-content-center align-items-center flex-column'>
+                        <div className='d-flex justify-content-between align-items-center flex-column'>
                             <img className='car-image-main' src={selectedCar.carImage} alt="" />
                             <button style={{color:"#fff",backgroundColor:"#FF4D30",border:"none",padding:"0.8rem 1.2rem",fontWeight:"bold",borderRadius:"4px"}}>Reserve now</button>
                         </div>
