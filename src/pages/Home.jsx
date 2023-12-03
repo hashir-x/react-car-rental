@@ -6,6 +6,7 @@ import Tag from '../components/Tag'
 import Choose from '../components/Choose'
 import Review from '../components/Review'
 import Questions from '../components/Questions'
+import App from '../components/App'
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
     <Choose/>
     <Review/>
     <Questions/>
+    <App/>
     </>
   )
 }
