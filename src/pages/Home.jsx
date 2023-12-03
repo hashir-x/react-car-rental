@@ -4,6 +4,7 @@ import AboutSupport from '../components/AboutSupport'
 import CarInfo from '../components/CarInfo'
 import Tag from '../components/Tag'
 import Choose from '../components/Choose'
+import Review from '../components/Review'
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
     <CarInfo/>
     <Tag/>
     <Choose/>
+    <Review/>
     </>
   )
 }

@@ -1,0 +1,27 @@
+.choose {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.choose-left {
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+    margin-bottom: 6rem;
+
+}
+
+.choose-right {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+    gap: 2.5rem;
+}
+
+@media (max-width:1000px){
+    .choose {
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
