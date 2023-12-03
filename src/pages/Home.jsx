@@ -3,6 +3,7 @@ import Intro from '../components/Intro'
 import AboutSupport from '../components/AboutSupport'
 import CarInfo from '../components/CarInfo'
 import Tag from '../components/Tag'
+import Choose from '../components/Choose'
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
     </div>
     <CarInfo/>
     <Tag/>
+    <Choose/>
     </>
   )
 }

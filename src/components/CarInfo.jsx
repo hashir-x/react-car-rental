@@ -90,6 +90,7 @@ function CarInfo() {
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                </div>
             </div>
