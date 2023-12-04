@@ -1,0 +1,91 @@
+import React, { useState } from 'react';
+
+const options = [
+  { value: 'option1', label: 'Option 1' },
+  { value: 'option2', label: 'Option 2' },
+  // Add more options as needed
+];
+
+const App = () => {
+  const [formValues, setFormValues] = useState({
+    startDate: '',
+    endDate: '',
+    selectOption1: null,
+    selectOption2: null,
+    input1: '',
+    input2: '',
+  });
+
+  const handleInputChange = (field, value) => {
+    setFormValues({
+      ...formValues,
+      [field]: value,
+    });
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission logic here
+    console.log('Form Values:', formValues);
+  };
+
+  return (
+    <div className="App">
+      <form onSubmit={handleFormSubmit}>
+        <label>
+          Start Date:
+          <input type="date" value={formValues.startDate} onChange={(e) => handleInputChange('startDate', e.target.value)} />
+        </label>
+        <br />
+
+        <label>
+          End Date:
+          <input type="date" value={formValues.endDate} onChange={(e) => handleInputChange('endDate', e.target.value)} />
+        </label>
+        <br />
+
+        <label>
+          Select Option 1:
+          <select value={formValues.selectOption1} onChange={(e) => handleInputChange('selectOption1', e.target.value)}>
+            <option value="">Select an option</option>
+            {options.map((option) => (
+              <option key={option.value} value={option.value}>
+                {option.label}
+              </option>
+            ))}
+          </select>
+        </label>
+        <br />
+
+        <label>
+          Select Option 2:
+          <select value={formValues.selectOption2} onChange={(e) => handleInputChange('selectOption2', e.target.value)}>
+            <option value="">Select an option</option>
+            {options.map((option) => (
+              <option key={option.value} value={option.value}>
+                {option.label}
+              </option>
+            ))}
+          </select>
+        </label>
+        <br />
+
+        <label>
+          Input 1:
+          <input type="text" value={formValues.input1} onChange={(e) => handleInputChange('input1', e.target.value)} />
+        </label>
+        <br />
+
+        <label>
+          Input 2:
+          <input type="text" value={formValues.input2} onChange={(e) => handleInputChange('input2', e.target.value)} />
+        </label>
+        <br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  );
+};
+
+export default App

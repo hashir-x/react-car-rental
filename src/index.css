@@ -5,3 +5,13 @@
   font-family: 'Rubik', sans-serif;
   scroll-behavior: smooth;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff4d30; 
+  border-radius: 10px;
+}
