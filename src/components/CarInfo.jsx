@@ -49,7 +49,7 @@ function CarInfo() {
                                           event.target.style.fontWeight = 'bold';
                                         }
                                       }}
-                                  onClick={() => onSelectCar(car)} key={car.id} className='car-name'>{car.name}</button>
+                                  onClick={() => onSelectCar(car)} className='car-name'>{car.name}</button>
                             ))
                             }
                         </div>
@@ -89,8 +89,7 @@ function CarInfo() {
                                     <span>{selectedCar.fuel}</span>
                                 </div>
                             </div>
-                        </div>
-                        
+                        </div> 
                     </div>
                </div>
             </div>
