@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './booking.css'
 import { carData } from '../data/cars'
 import { placeData } from '../data/places'
@@ -10,8 +10,15 @@ function Bookings() {
   car:"",pickUpLocation:"",dropOffLocation:"",pickUpTime:"",dropOffTime:""
  })
 
- const [carImg,setCarImg] = useState('')
+ const [selectedCar,setSelectedCar] = useState('')
 
+
+ const onSelect = (e) =>{
+  setBooking({...booking,car:e.target.value})
+  const cars = booking.car
+  // setSelectedCar(carData.cars)
+  console.log(cars);
+ }
 
   return (
     <>
@@ -23,7 +30,7 @@ function Bookings() {
                 {/*  */}
                 <div>
                   <label className='required-field' htmlFor="type">Select Your Car Type</label>
-                  <select value={booking.car}  onChange={e=>setBooking({...booking,car:e.target.value})} name="type" id="type" required>
+                  <select value={booking.car}  onChange={e=>onSelect(e)} name="type" id="type" required>
                     {
                     carData?.map((car)=>(
                       <option value={car.name}>{car.name}</option>
@@ -63,7 +70,7 @@ function Bookings() {
                 </div>
                 {/*  */}
                 <div style={{marginBottom:"-1rem"}}>
-                    <BookingModal booking={booking}/>
+                    <BookingModal selectedCar={selectedCar} booking={booking}/>
                 </div>
               </form>
             </div>

@@ -7,22 +7,23 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 
-function BookingModal({booking}) {
+function BookingModal({booking,selectedCar}) {
 
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+
   const carBooking = (e) => {
     e.preventDefault()
-    console.log(booking);
   const {car,pickUpLocation,dropOffLocation,pickUpTime,dropOffTime} = booking
   if (!car || !pickUpLocation || !dropOffLocation || !pickUpTime || !dropOffTime){
     toast.error('Please fill all the details!'); 
     }
     else{
       handleShow()
+      console.log(selectedCar);
     }
  }
 
@@ -87,7 +88,7 @@ function BookingModal({booking}) {
           </div>
           <hr />
           <div className='personal-info p-2'>
-            <h2 style={{color:"#000",fontWeight:'bold'}}>PERSONAL INFORMATION</h2>
+            <h3 style={{color:"#000",fontWeight:'bold'}}>PERSONAL INFORMATION</h3>
             <div className='modal-name'>
               <div style={{display:"flex",flexDirection:"column",gap:"0.25rem",width:"100%"}}>
                 <label className='required-field' style={{color:"#777777",fontSize:"1.1rem"}} htmlFor="">First Name</label>
