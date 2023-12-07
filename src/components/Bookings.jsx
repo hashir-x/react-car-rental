@@ -10,15 +10,12 @@ function Bookings() {
   car:"",pickUpLocation:"",dropOffLocation:"",pickUpTime:"",dropOffTime:""
  })
 
- const [selectedCar,setSelectedCar] = useState('')
-
 
  const onSelect = (e) =>{
   setBooking({...booking,car:e.target.value})
-  const cars = booking.car
-  // setSelectedCar(carData.cars)
-  console.log(cars);
  }
+
+
 
   return (
     <>
@@ -70,7 +67,7 @@ function Bookings() {
                 </div>
                 {/*  */}
                 <div style={{marginBottom:"-1rem"}}>
-                    <BookingModal selectedCar={selectedCar} booking={booking}/>
+                    <BookingModal booking={booking}/>
                 </div>
               </form>
             </div>

@@ -1,18 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import './bookingmodal.css'
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { carData } from '../data/cars';
 
 
-function BookingModal({booking,selectedCar}) {
+function BookingModal({booking}) {
 
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const [selectCar,setSelectCar] = useState('')
 
 
   const carBooking = (e) => {
@@ -23,9 +26,12 @@ function BookingModal({booking,selectedCar}) {
     }
     else{
       handleShow()
-      console.log(selectedCar);
+      const carName = booking.car
+      console.log(carName);
+      setSelectCar((carData.find(car=>car['name']===carName)))
     }
  }
+
 
 
   return (
@@ -83,7 +89,7 @@ function BookingModal({booking,selectedCar}) {
             <div className='d-flex flex-column gap-3'>
                 <h5 style={{color:"#000",fontWeight:"bold"}}>Car - <span style={{color:"#ff4d30"}}>{booking.car}</span></h5>
                 {booking&&
-                  <img src="" alt="car-image" />}
+                  <img style={{width:"90%"}} src={selectCar.carImage} alt="car-image" />}
             </div>
           </div>
           <hr />
